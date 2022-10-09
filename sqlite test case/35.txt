@@ -1,0 +1,5 @@
+PRAGMA auto_vacuum = 0;
+  PRAGMA page_size = 1024;
+  PRAGMA cache_size = 100;
+  CREATE TABLE t1(a);
+WITH s AS (SELECT 1 UNION ALL SELECT i+1 FROM t1 WHERE i<200) INSERT INTO t1 SELECT randomblob(900) FROM s;

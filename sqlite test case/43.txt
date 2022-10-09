@@ -1,0 +1,11 @@
+ PRAGMA automatic_index=OFF;
+    CREATE TABLE collate4t1(a COLLATE NOCASE);
+    CREATE TABLE collate4t2(b COLLATE TEXT);
+SELECT * FROM collate4t2, collate4t1 WHERE a = b;
+CREATE INDEX collate4i1 ON collate4t1(a);
+DROP INDEX collate4i1;
+CREATE INDEX collate4i1 ON collate4t1(a COLLATE TEXT);
+SELECT * FROM collate4t2, collate4t1 WHERE a = b
+     ORDER BY collate4t2.rowid, collate4t1.rowid;
+SELECT a FROM collate4t1 WHERE a IN (SELECT * FROM collate4t2)
+       ORDER BY rowid;
