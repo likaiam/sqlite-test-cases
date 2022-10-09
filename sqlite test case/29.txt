@@ -1,0 +1,6 @@
+PRAGMA page_size=65536;
+CREATE TABLE t1(a INTEGER PRIMARY KEY, b BLOB);
+INSERT INTO t1(a,b) SELECT i, zeroblob(6500) FROM c;
+UPDATE t1 SET b=zeroblob(3000);
+UPDATE t1 SET b=zeroblob(64000) WHERE a=2;
+PRAGMA integrity_check=1;
