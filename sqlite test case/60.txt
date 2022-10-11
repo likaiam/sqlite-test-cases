@@ -1,0 +1,6 @@
+CREATE TABLE t1(a,b,c);
+INSERT INTO t1 VALUES(1,2,3);
+SELECT count(distinct a),count(distinct b),count(distinct c),count(all a) FROM t1;
+SELECT b, count(distinct c) FROM t1 GROUP BY b;
+SELECT count(*), count(distinct a), count(distinct b) FROM t1;
+SELECT group_concat(distinct a,b) FROM t1;

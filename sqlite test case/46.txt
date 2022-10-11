@@ -1,0 +1,6 @@
+CREATE TABLE tabc(a,b,c);
+CREATE TABLE txyz(x,y,z);
+CREATE VIEW v1 AS SELECT tabC.a, txyZ.x, *  FROM tabc, txyz ORDER BY 1 LIMIT 1;
+CREATE VIEW v2 AS SELECT tabC.a, txyZ.x, tboTh.a, tbotH.x, * FROM tabc, txyz, tboth ORDER BY 1 LIMIT 1;
+PRAGMA short_column_names=OFF;
+PRAGMA full_column_names=OFF;

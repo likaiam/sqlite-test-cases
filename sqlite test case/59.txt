@@ -1,0 +1,5 @@
+PRAGMA automatic_index = 0;
+  CREATE TABLE t1(a, b);
+  CREATE TABLE t2(c, d);
+SELECT * FROM t1 CROSS JOIN t2 ON (a=c) WHERE d IS NULL;
+SELECT * FROM t1 LEFT JOIN t2 ON (a=c AND a=10) WHERE d IS NULL;

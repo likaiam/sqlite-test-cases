@@ -1,0 +1,7 @@
+PRAGMA journal_mode = persist;
+CREATE TABLE ab(a, b);
+INSERT INTO ab VALUES(0, 'abc');
+UPDATE ab SET b = randstr(1000,1000);
+      
+    
+   
