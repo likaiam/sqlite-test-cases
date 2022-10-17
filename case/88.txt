@@ -1,0 +1,2 @@
+BEGIN;
+    CREATE TABLE t1(w int, x int, y int, z int);

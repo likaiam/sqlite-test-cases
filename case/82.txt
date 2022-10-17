@@ -1,0 +1,1 @@
+return "CREATE TABLE t1(id TEXT, host TEXT, class TEXT)"

@@ -1,0 +1,2 @@
+execsql "CREATE TABLE $name.tbl(x)"
+    execsql "INSERT INTO $name.tbl VALUES('$f')"

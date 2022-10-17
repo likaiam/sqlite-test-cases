@@ -1,0 +1,1 @@
+return "CREATE TABLE $tbl ([join $cols ,])"
