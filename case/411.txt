@@ -1,0 +1,3 @@
+DROP TABLE temp.nosuchtable;
+  CREATE TABLE nosuchtable(a, b, c, d);
+  CREATE VIRTUAL TABLE temp.f USING fuzzer(nosuchtable);
