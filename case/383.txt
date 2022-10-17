@@ -1,0 +1,4 @@
+CREATE TABLE x1(x);
+  INSERT INTO x1 VALUES('john'), ('paul'), ('george'), ('ringo');
+  INSERT INTO t1 SELECT x FROM x1;
+  SELECT last_insert_rowid();

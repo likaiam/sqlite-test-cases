@@ -1,0 +1,2 @@
+CREATE TABLE t1_segdir(a, b, c);
+    ALTER TABLE fts_t1 RENAME to t1;
